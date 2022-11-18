@@ -1,0 +1,383 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+#page1{
+    width: 50%;
+    height: 100vh;
+   background-color: #623bff7d;
+   animation-name: page1;
+   animation-duration: 2.5s;
+   animation-fill-mode: forward;
+}
+
+#page2{
+    width: 50%;
+    height: 100vh;
+    background-color: #3bcbffd8;
+    animation-name: page2;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+ 
+#page3{
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    height: 88%;
+    scale: 0;
+    background-color: #ccf0ffb0; 
+    animation-name: page3;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px 0;
+    animation-name: nav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.8s;
+    opacity: 0;
+}
+ 
+#text h3{
+    position: absolute;
+    left: 6%;
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+#emoji{
+       position: absolute;
+       left: 0.5%;
+       top: -105%;
+}
+#nav #emoji i{
+    padding: 20px 20px;
+    font-size: 40px;
+}
+
+#nav p{
+    position: absolute;
+    left: 10%;
+    font-size: 18px;
+    top: 63px;
+}
+#nav i{
+    position: absolute;
+    left: 8%;
+    font-size: 20px;
+    top: 63px;
+}
+
+#link{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 780px;
+}
+
+#link a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#link i{
+    position: absolute;
+    width: 5%;
+    left: 79%;
+    top: 6px;
+    z-index: 999;
+    margin-left: 6px;
+}
+#nav #link a:nth-last-child(1){
+    padding: 7px 30px ;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+}
+#nav #link a:nth-last-child(1) #green{
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    transition: left 0.4s ease; 
+}
+#nav #link a:nth-last-child(1) h5{
+    font-weight: 600;
+    position: relative;
+    z-index: 99;
+}
+#nav #link a:nth-last-child(1):hover #green{
+    left: 0;
+}
+#line{
+    position: absolute;
+    right: 0;
+    top: 72px;
+    width: 80%;
+    height: 1.5px;
+    background-color: black;
+    opacity: 0;
+    animation-name: line;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+
+#img{
+    position: absolute;
+    right: 2%;
+    top: 18%;
+    width: 55%;
+    height: 77%;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    background-image: url(https://www.navkartechnosoft.com/assets/img/fullstack_development/full_stack_development_banner.png);
+    background-position: center;
+    background-size: cover;
+    animation-name: img;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+#text1{
+    position: absolute;
+    width: 38%;
+    height: 35%;
+    top: 60%;
+    left: 5%;
+    opacity: 0;
+    animation-name: textanim;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+#text1 h1{
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+}
+#text1 h3{
+    font-size: 25px;
+    margin-left: 180px;
+    margin-top: 5px;
+    font-weight: 150;
+}
+
+#text1 p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#follow{
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    margin-top: 15px;
+    opacity: 0;
+    animation-name: followanim;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+#follow h4{
+    font-size: 20px;
+}
+
+#follow i{
+    font-size: 25px;
+    position: absolute;
+    left: 10%;
+}
+
+#follow a{
+    text-decoration: none;
+    font-size: 22px;
+    position: absolute;
+    left: 20%;
+    color: blue;
+}
+
+#logo{
+    position: absolute;
+    width: 240px;
+    top: 18%;
+    height: 240px;
+    margin-left: 5%;
+    border: 8px solid white;
+    border-radius: 50%;
+    scale: 0;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+
+#photo{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    border-radius: 50%;
+    background-image: url(https://st3.depositphotos.com/4111759/13566/v/450/depositphotos_135660094-stock-illustration-transparent-shield-safety-glass-badge.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#photo1{
+    position: absolute;
+    width: 45%;
+    height: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-image: url(https://i.etsystatic.com/isla/0d2686/21253188/isla_280x280.21253188_hqug00yw.jpg?version=0);
+    background-position: top;
+    background-size: cover;
+}
+@keyframes page1 {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+   
+}
+@keyframes page2 {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes page3 {
+    0%{
+        transform: translateX(-100%);
+        scale: 0;
+    }
+    100%{
+        transform: translateX(-50%);
+       scale: 1;
+       z-index: 9999;
+    }
+}
+
+@keyframes nav {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes line {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes img {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes logo {
+    0%{
+        transform: translateY(-100%);
+        scale: 0;
+    }
+    50%{
+        scale: .5;
+    }
+    100%{
+        transform: translateY(0);
+        scale: 1;
+    }
+}
+
+@keyframes textanim {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes followanim {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
